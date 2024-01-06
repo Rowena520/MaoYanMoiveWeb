@@ -1,0 +1,308 @@
+@import url("myflex.css");
+body{
+    margin: 0;
+}
+.top{
+    width: 100%;
+    height: 80px;
+    /* background-color: cyan; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid #e7e1e1e1;
+    border-bottom: 1px solid #e7e1e1;
+
+}
+.top>.top_left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.top>.top_left>.top_left_log{
+    width: 30%;
+    height: 100%;
+}
+.top>.top_left>.top_left_city{
+    width: 10%;
+    height: 100%;
+}
+.top>.top_left>.top_left_navy{
+    width: 60%;
+    height: 100%;
+    font-size: 18px;
+}
+.top>.top_left>.top_left_navy>.navy{
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+}
+.top>.top_right{
+    width:18% ;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top>.top_right>.app{
+    width: 40%;
+    height: 100%;
+}
+.top>.top_right>.user{
+    width: 50%;
+    height: 100%;
+}
+.content{
+    width: 100%;
+    height: 662px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: #42ffdcd6; */
+}
+.content>.content_main{
+    width: 75%;
+    height: 90%;
+    /* background-color: #fafad3; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content>.content_main>.playhot{
+    height: 100%;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(255, 0, 0);
+}
+.content>.content_main>.playhot>.playhot_title{
+    width: 100%;
+    height: 7%;
+    /* background-color: #848484; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+}
+.content>.content_main>.playhot>.playhot_move{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: #cc23ff; */
+}
+.content>.content_main>.playhot>.playhot_move>.move{
+    width: 22%;
+    height: 50%;
+    border: 1px solid #e7e1e1e1;
+    /* background-color: #fa8383; */
+    position: relative;
+    background: url(/img/namebg.png) no-repeat;
+}
+.content>.content_main>.playhot>.playhot_move>.move>.movie{
+    width: 100%;
+    height: 83%;
+    /* background-color: #45ff4e; */
+
+}
+/* .content>.content_main>.playhot>.playhot_move>.move>.namebg_shadow{
+
+height: 215px;
+
+width: 100%;
+background: url(./namebg.png) no-repeat bottom;
+bottom: 0;
+}  */
+/* .content>.content_main>.playhot>.playhot_move>.move>.movie.img{
+    width: 100%;
+    height: 100%;
+} */
+/* .content>.content_main>.playhot>.playhot_move>.move>.movie>.namebg_shadow{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+} */
+.content>.content_main>.playhot>.playhot_move>.move>.movie>.img_bottom{
+    height: 31px;
+    /* background-color: red; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-top: -36px; */
+    /* display: inline-block; */
+    width: 142px;
+    /* background:url(./namebg.png) no-repeat; */
+    position: absolute;
+    bottom: 45px;
+    padding-left: 9px;
+}
+.content>.content_main>.playhot>.playhot_move>.move>.movie>.img_bottom>.img_bottom_left{
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content>.content_main>.playhot>.playhot_move>.move>.movie>img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* .content>.content_main>.playhot>.playhot_move>.move>.movie>.namebg_shadow{
+    width: 100%;
+    height: 33px;
+    position: absolute;
+    margin-bottom: 0;
+} */
+.content>.content_main>.playhot>.playhot_move>.move>.buyticket{
+    width: 100%;
+    height: 19%;
+    cursor: pointer;
+    letter-spacing: 5px;
+    /* position: relative; */
+    /* background-color: #023d0c; */
+}
+.content>.content_main>.playhot>.playhot_move>.move>.buyticket:hover{
+    background-color: #fb5252;
+    color: white;
+}
+
+
+
+/* 右侧今日票房排名 */
+.content>.content_main>.today{
+    width: 30%;
+    height: 100%;
+    /* background-color: #ffbaba; */
+    display: flex;
+    flex-direction: column;
+}
+.content>.content_main>.today>.movie_top{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #e7e1e1;
+    margin-top: 19px;
+    display: flex;
+    flex-direction: row;
+}
+.today>.rank_box>.movie_top>.top_img{
+    width: 127px;
+    height: 100%;
+}
+.today>.rank_box>.movie_top>.top_img>img{
+    width: 100%;
+    height: 100%;
+}
+.content>.content_main>.today>.movie_top>.movie_text{
+    padding-left: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* .rank_content>ul{
+    text-decoration: none;
+} */
+/* .rank_content>ul>li>a{
+    text-decoration: none;
+} */
+.content>.content_main>.today>.rank_content{
+    width: 100%;
+    height: 216px;
+    /* background-color: #9bf480; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.movie_1{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.content>.content_main>.today>.rank_content>.movie_1>.movie_text_left span{
+    font-size: 17px;
+    padding-left: 12px;
+    color: rgb(75, 75, 75);
+}
+.content>.content_main>.today>.statistics{
+    width: 100%;
+    height: 109px;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+    border: 1px solid #c9c9c9;
+    display: flex;
+    flex-direction: row;
+}
+.content>.content_main>.today>.statistics>.statistics_vertical_text{
+    width: 41px;
+    background-color: #fb5252;
+    height: 100%;
+}
+.content>.content_main>.today>.statistics>.statistics_right{
+    margin: 0 auto;
+    width: 301px;
+    height:100%;
+    background-color: #f9f9f9;
+    /* background-color: #f3ff74; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content>.content_main>.today>.statistics>.statistics_right>.statistics_right_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.content>.content_main>.today>.statistics>.statistics_right>.statistics_right_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+/* 猫眼声明 */
+.footer {
+    background-color: #262426;
+    padding: 56px 0;
+    margin: 0 auto;
+    min-width: 1200px;
+    margin-top: 82px;
+}
+.footer p, .footer p a {
+    color: #ccc;
+}
+.footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    height: 22px;
+    text-decoration: none;
+}
+.footer>.friendly-links>a{
+    /* color: red; */
+    text-decoration: none;
+}
+.footer a:hover{
+    color:red;
+    text-decoration: underline;
+}

@@ -1,0 +1,76 @@
+@import url("myflex.css");
+.content{
+    width: 100%;
+    height: 380px;
+    background-image: url("./details_bg.png");
+    /* background-size: 125%; */
+}
+.content>.movie_img{
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    left: 18%;
+    top: 8%;
+    background-color: #e04040;
+    border: 5px white solid;
+    cursor: pointer;
+}
+.content>.movie_img>img{
+    width: 100%;
+    height: 100%;
+}
+.content>.movie_infor{
+    width: 17%;
+    height: 31%;
+    top: 8%;
+    left: 35%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #ffacac; */
+}
+.content>.movie_infor>.infor>span{
+    color: white;
+}
+.content>.movie_infor>.button{
+    width: 100%;
+    height: 32%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content>.movie_infor>.button>.text_want{
+    width: 47%;
+    height: 40%;border-radius: 5px;
+    background-color: #3dff9e;
+}
+.content>.movie_infor>.button>.text_score{
+    width: 47%;
+    height: 40%;
+    border-radius: 5px;
+    background-color: #ff9e3d;
+}
+.content>.movie_infor>.button>.purchase_ticket{
+    width: 100%;
+    height: 40%;
+    border-radius: 5px;
+    background-color: #ff2424;
+}
+.content>.movie_core{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 12%;
+    height: 14%;
+    top: 25%;
+    left: 55%;
+    color: white;
+    /* background-color: #696767; */
+}
+/* .content>.movie_core>.koubei>span{
+    color: white;
+} */

@@ -1,0 +1,268 @@
+@import url("myflex.css");
+
+.content {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.content>.seats {
+    width: 50%;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+}
+
+.content>.seats>.screen {
+    width: 53%;
+    padding-top: 50px;
+    font-size: 16px;
+    color: #666;
+    background: url("../img/screen.png") no-repeat;
+    text-align: center;
+}
+
+.content>.seats>.seatProcession {
+    margin-top: 20px;
+}
+
+.content>.seats>.seatProcession>.rowId {
+    width: 24px;
+    float: left;
+    margin-top: -4px;
+    white-space: normal;
+}
+
+.content>.seats>.seatProcession>.rowId>span {
+    font-size: 16px;
+    color: #999;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    line-height: 77px;
+    text-align: center;
+}
+
+.content>.seats>.seatProcession>table{
+    border-collapse: separate;
+    border-spacing: 27px;
+}
+
+/*.content>.seats>.seatProcession>table>th, td {*/
+/*    padding: 20px 20px;*/
+/*}*/
+
+.content>.seats>.seatProcession>table img {
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content>.seats>.seatType {
+    width: 100%;
+    height: 10%;
+    vertical-align: middle;
+}
+
+.content>.seats>.seatType>div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content>.seats>.seatType img {
+    width: 25px;
+    height: 20px;
+}
+
+.content>.seats>.seatType span {
+    font-size: 20px;
+}
+
+.content>.ticketInfor {
+    width: 20%;
+    height: 640px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-right:  1px solid #e5e5e5;
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: inline-block;
+}
+
+.flex_x {
+    display: flex;
+    flex-direction: row;
+}
+
+.content>.ticketInfor>.movie_infor {
+    width: 100%;
+    height: 158px;
+}
+
+.content>.ticketInfor>.movie_infor>.movie_img {
+    height: 100%;
+    width: 118px;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 7px 0 hsla(0, 0%, 53%, .5);
+}
+
+.content>.ticketInfor>.movie_infor>.movie_text {
+    margin-left: 15px;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.info_item {
+    font-size: 12px;
+    color: #999;
+}
+
+.value {
+    color: #151515;
+    margin-left: 2px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 14px;
+}
+
+.content>.ticketInfor>.movie_infor>.movie_img>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.content>.ticketInfor>.show_infor {
+    width: 100%;
+    margin-top: 20px;
+    line-height: 25px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.content>.ticketInfor>.show_infor>.info_item {
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.content>.ticketInfor>.show_infor>.info_item>.value {
+    color: #151515;
+    font-size: 15px;
+    margin-left: 2px;
+}
+
+.content>.ticketInfor>.ticket_infor {
+    width: 100%;
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.content>.ticketInfor>.ticket_infor>.no-ticket>.buy-limit {
+    color: #999;
+}
+
+.content>.ticketInfor>.ticket_infor>.no-ticket>.no-selected {
+    color: #151515;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.content>.ticketInfor>.confirm_phone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 55px;
+}
+
+.content>.ticketInfor>.confirm_phone div,
+.get_number,
+.buttons {
+    width: 100%;
+}
+
+.content>.ticketInfor>.confirm_phone>div>.phone {
+    font-size: 20px;
+    text-indent: 15px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 100px;
+    border: 1px solid #e5e5e5;
+    height: 38px;
+}
+
+.content>.ticketInfor>.confirm_phone>div>.phone::placeholder {
+    font-size: 15px;
+    color: #999;
+    /* padding-left: 15px; */
+}
+
+.content>.ticketInfor>.confirm_phone>.get_number {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 59px;
+}
+
+.content>.ticketInfor>.confirm_phone>.get_number>#verificationInput {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 100px;
+    font-size: 20px;
+    text-indent: 15px;
+}
+
+.content>.ticketInfor>.confirm_phone>.get_number>#verificationInput::placeholder {
+    font-size: 15px;
+    color: #999;
+    /* padding-left: 15px; */
+}
+
+.content>.ticketInfor>.confirm_phone>.get_number>#getVerification {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: orange;
+
+}
+
+.content>.ticketInfor>.confirm_phone>.buttons>.doPlay {
+    border: none;
+    height: 40px;
+    width: 100%;
+    background-color: #f03d37;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.content>.ticketInfor>.confirm_phone>.buttons>.doPlay:hover {
+    background-color: #ff5e59;
+}

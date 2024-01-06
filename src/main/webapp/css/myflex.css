@@ -1,0 +1,12 @@
+.myflex_x{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.myflex_y{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

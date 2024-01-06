@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录注册</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(to right,#df89b5, #bfd9fe) ;
+        display: flex;
+        justify-content: center;
+    }
+    .a{
+        position: relative;
+        top: 200px;
+        width: 1100px;
+        height: 550px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.8);
+        display: flex;
+    }
+    .b{
+        width: 800px;
+        height: 550px;
+        background-image: url(/img/bike.jpg);
+        background-size: cover;
+    }
+    .c{
+        width: 300px;
+        height: 550px;
+        background-color: rgba(255,255,255,.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .d{
+        width: 250px;
+        height: 500px;
+    }
+    .d h1{
+        font: 900 30px '';
+    }
+    .e{
+        width: 230px;
+        margin: 20px 0;
+        outline: none;
+        border: 0;
+        padding: 10px;
+        border-bottom: 3px solid rgb(255, 34, 123);
+        font: 900 16px '' ;
+
+    }
+    .f_1{
+        float: left;
+        margin: 10px 0;
+    }
+    .f_2{
+        float: right;
+        margin: 10px 0;
+    }
+    .g{
+        position: absolute;
+        margin: 20px;
+        bottom: 40px;
+        display: block;
+        width: 200px;
+        height: 60px;
+        font: 900 30px '';
+        text-decoration: none;
+        line-height: 50px;
+        border-radius: 30px;
+        background: linear-gradient(to right,#df89b5, #bfd9fe);
+        text-align: center;
+        transition: 0.3s ease;
+    }
+    .g:hover{
+        transform: scale(1.1);
+    }
+</style>
+<body>
+    <div class="a">
+        <div class="b"></div>
+        <div class="c">
+            <div class="d">
+                <h1>Login/Register</h1>
+                <input type="text" class="e" placeholder="YOUR PHONE">
+                <input type="text" class="e" placeholder="EMAIL">
+                <input type="password" class="e" placeholder="PASSWORD">
+                <a href="#" class="f_1">Signup</a>
+                <a href="#" class="f_2">Forget the password?</a>
+                <a href="#" class="g">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
